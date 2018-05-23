@@ -1,4 +1,6 @@
 @echo off
+echo Press Enter When Ready (Program will close all browsers)
+pause >nul
 taskkill /F /IM chrome.exe
 taskkill /F /IM iexplore.exe
 echo *******************************************
@@ -10,7 +12,6 @@ echo *******************************************
 echo *******************************************
 echo *******************************************
 echo *******************************************
-
 set /p id="Clear Passwords? (Y/N): "
 if %id%==Y GOTO :remove
 if %id%==y GOTO :remove
